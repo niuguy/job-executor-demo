@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jobdemo
+  labels:
+    app: jobdemo
+spec:
+  selector:
+    matchLabels:
+      app: jobdemo
+  template:
+    metadata:
+      labels:
+        app: jobdemo
+    spec:
+      containers:
+        - name: jobdemo
+          image: deccr.ccs.tencentyun.com/myfana2022/jobdemo:0
+          ports:
+            - containerPort: 8080
+          env:
+            - name: GREETING_PREFIX
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-boot-configmaps-demo
+                  key: greeter.prefix
+
