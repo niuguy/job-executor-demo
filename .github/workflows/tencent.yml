@@ -22,7 +22,7 @@ on:
 
 # Environment variables available to all jobs and steps in this workflow
 env:
-  TKE_IMAGE_URL: deccr.ccs.tencentyun.com/myfana2022/jobdemo
+  TKE_IMAGE_URL: deccr.ccs.tencentyun.com/myfana2022/backend
   TKE_REGION: eu-frankfurt
   TKE_CLUSTER_ID: cls-oh2fi8hk
   TKE_CLUSTER_IP: https://43.131.7.42:443
