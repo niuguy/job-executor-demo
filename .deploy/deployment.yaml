@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: jobdemo
-          image: deccr.ccs.tencentyun.com/myfana2022/jobdemo:0
+          image: deccr.ccs.tencentyun.com/myfana2022/jobdemo:8380930d9870d53451260b870bcd2d141e41081e8b7126bc555e3762ed178fcf
           ports:
             - containerPort: 8080
           env:
