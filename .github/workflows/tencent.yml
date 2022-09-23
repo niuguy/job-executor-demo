@@ -18,7 +18,7 @@ name: Tencent Kubernetes Engine
 on:
   push:
     branches:
-      - "xxljob"
+      - "main"
 
 # Environment variables available to all jobs and steps in this workflow
 env:
